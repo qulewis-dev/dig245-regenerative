@@ -1,19 +1,43 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <!-- meta tags, links to css, etc. -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Generative Design</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
+<html lang="en"><head>
+
+     <style>
+        .triangle {
+            width: 0;
+            height: 0;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+            border-bottom: 100px solid #0199ff;
+            margin: 50px auto;
+        }
+         .circle {
+            width: 100px;
+            height: 100px;
+            background-color: #0199ff; 
+            border-radius: 50%;        
+            }
+    </style>
 </head>
+
 <body>
 
-    <!-- visible content goes here -->
-	<h1>Generative Design</h1>
-	<p>See README.md for info</p>
+    
 
-    <!-- load javascript after the page elements render -->
-    <script src="assets/js/main.js"></script>
-</body>
-</html>
+    <section class="controls">
+        <label for="color">color</label>
+        <input type="range" id="color" min="1" max="200" step="1" value="color">
+        <label for="scale">scale</label>
+        <input type="range" id="scale" min=".05" max="5" step=".1" value="scale">
+        <label for="position">position</label>
+        <input type="range" id="position" min="1" max="400" step="10" value="position">
+        <label for="amount">amount</label>
+        <input type="range" id="amount" min="1" max="400" step="10" value="amount">
+                
+                
+    </section>
+
+    <section>
+        <div class="circle"></div>
+        <div class="triangle"></div>
+    </section>
+
+</body></html>
