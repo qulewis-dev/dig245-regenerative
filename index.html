@@ -1,6 +1,8 @@
-<html lang="en"><head>
-
-     <style>
+<html lang="en">
+<head>
+    <!-- Page styling for the geometric shapes and layout -->
+    <style>
+        /* Triangle shape used as a decorative element */
         .triangle {
             width: 0;
             height: 0;
@@ -9,35 +11,38 @@
             border-bottom: 100px solid #0199ff;
             margin: 50px auto;
         }
-         .circle {
+
+        /* Circle shape used as the main visual element */
+        .circle {
             width: 100px;
             height: 100px;
-            background-color: #0199ff; 
-            border-radius: 50%;        
-            }
+            background-color: #0199ff;
+            border-radius: 50%;
+        }
     </style>
 </head>
 
 <body>
-
-    
-
+    <!-- Controls for changing visual properties such as color, scale, position, and amount -->
     <section class="controls">
         <label for="color">color</label>
         <input type="range" id="color" min="1" max="200" step="1" value="color">
+
         <label for="scale">scale</label>
         <input type="range" id="scale" min=".05" max="5" step=".1" value="scale">
+
         <label for="position">position</label>
         <input type="range" id="position" min="1" max="400" step="10" value="position">
+
         <label for="amount">amount</label>
         <input type="range" id="amount" min="1" max="400" step="10" value="amount">
-                
-                
     </section>
 
+    <!-- Main visual elements displayed on the page -->
     <section>
         <div class="circle"></div>
         <div class="triangle"></div>
     </section>
+</body>
+</html>
 
-</body></html>
